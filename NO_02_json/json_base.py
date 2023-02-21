@@ -1,3 +1,4 @@
+# coding=utf8
 import pandas as pd
 
 
@@ -30,6 +31,6 @@ for index, row in df.iterrows():
 # 据说有个prettytable包
 from tabulate import tabulate
 
-print(tabulate(df,headers=df.columns.tolist(),
-               tablefmt='psql',stralign='left',
+print(tabulate(df, headers=df.columns.tolist(),
+               tablefmt='psql', stralign='left',
                numalign='left', showindex=False))
